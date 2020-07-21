@@ -7,7 +7,6 @@ let initial = true; //처음시작:true
 let flag = true;
 let startTime = 0;
 let stopTime = 0;
-let saveTime;
 
 let start;
 
@@ -36,7 +35,6 @@ const timeStart = () => {
 
 const timeStop = () => {
   clearInterval(start);
-  const nowTime = new Date().getTime();
   stopTime = Date.now();
 
   initial = false;
